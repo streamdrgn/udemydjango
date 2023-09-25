@@ -5,4 +5,3 @@ def home_page(request):
 
 def about_page(request):
     return HttpResponse("<h1>This is about page!</h1>")
-
