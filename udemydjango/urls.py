@@ -17,10 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 
-from .views import home_page, about_page
+from .views import (
+    home_page,
+    about_page,
+    contact_page,
+    example_page
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page),
+    path('contact/', contact_page),
     re_path(r'^pages?/$', about_page),
 ]
